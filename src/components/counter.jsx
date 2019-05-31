@@ -7,8 +7,14 @@ class Counter extends Component {
         tags: []
     };
 
+
+    constructor() {
+        super();
+        this.handleIncrement = this.handleIncrement.bind(this);
+    }
+
     handleIncrement() {
-        console.log('Increment Clicked', this.);
+        console.log('Increment Clicked', this);
     }
 
     render() {
